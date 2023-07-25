@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links HTML aprendizado</title>
+
+    <style>
+        body {text-align: center; }
+
+        /*POSICIONAR A IMAGEM COMO PLANO DE FUNDO*/
+        body::before {
+            /*Veja sobre pseudo-elementos*/
+            content: "";
+            /*Ponto da pagina de referência para a imagem*/
+            position: absolute; top: 0; left: 0; 
+            width: 100%; height: 100%;
+            background-image: url("realmadrid.jpg");
+            background-size: cover;
+            background-position: center;
+            /*A imagem será colocada apenas 1 vez na pagina*/
+            background-repeat: no-repeat;
+            opacity: 0.2; /* nivel de opacidade*/
+            z-index: -1; /* Colocar a imagem em segundo plano */
+        }
+        p { font-size: 22px; font-style: oblique;}
+
+    </style>
+</head>
+
+<body>
+    <h1>HOME PAGE</h1>
+    <h2>Link HTML aprendizado</h2>
+    <p><b>Esta é a primeira página do site</b></p>
+    <!--Coloca um linha horizontal na pagina-->
+    <hr>
+    <!-- âncora para hyperlink e hipertexto -->
+    <!-- "_blank" Hyperlink abrirá a página em uma nova guia -->
+    <!-- Link Absoluto ou URL Absoluta _ Quando o link é um site-->
+    <a href="https://www.linkedin.com/in/williandotnetalves/" target="_blank"><b>Ir para minha página pessoal</b></a><br><br>
+    <!-- Link Relativo ou URL Relativo-->
+    <a href="comigo.html"><b>Fale comigo por aqui</b></a><br><br>
+
+    <h3>Equipe de Trabalho</h3>
+
+    <a href="workgroup/willian.html"><b>Cooperador: Willian dotNet</b> </a>
+
+</body>
+</html>
